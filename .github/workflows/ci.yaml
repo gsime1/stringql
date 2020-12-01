@@ -8,5 +8,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run unit tests
       run: |
-        pip install testing.postgresql
+        pip3 install testing.postgresql
         python3 stringql/pg_engine_test.py test

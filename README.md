@@ -1,4 +1,4 @@
-#stringql
+# stringql
 
 Support for string queries parameterisation and execution, building on [`Psycopg2.sql`](https://www.psycopg.org/docs/sql.html) module. 
 
@@ -21,20 +21,21 @@ curs = engine.do_query(conn,
                        table="people", 
                        filter_col="family_name")
 
-for name in curs:  # when reading do_query returns iterable cursor
+for name in curs:  # when reading do_query returns an iterable cursor object
     print(name)  # prints tuples, like: ("john",) ...
 curs.close()  # always close your cursor
 ```
 
 ### the connect method
 You can connect to the postgres instance by using the libpq string, or the dsn keyword arguments: 
-- *libpq_string*: e.g. MydB("dbname=test user=postgres password=secret")
+- *libpq_string*: MydB("dbname=test user=postgres password=secret")
 - *dsn kwargs*: MyDb(dbname="test", user="postgres", password="secret")
-- *schema*: defaulted to None, in which case you'll connect to the public schema. Otherwise it'll create the schema for 
-you and connect you to it. 
+- *schema*: defaulted to None, in which case you'll connect to the public schema. Otherwise it'll create the schema and 
+set `search_path` to it. 
 
 ### the parameterise_query method
-The `parameterize_query()` function forms a Composable representing a snippet of SQL statement.
+The `parameterize_query()` function forms a [Composable object](https://www.psycopg.org/docs/sql.html#psycopg2.sql.Composable)
+ representing a snippet of SQL statement.
 It all happens behind the curtains when you call the `.do_query()` method. 
 
 - *query*: query string. see [here](https://www.psycopg.org/docs/sql.html#psycopg2.sql.SQL) for basic rules on how to form 
@@ -190,10 +191,3 @@ if __name__ == "__main__":
         for record in curs:
             print(record)
 ```
-
-
-
-
-
-
-

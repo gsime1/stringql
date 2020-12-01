@@ -5,12 +5,12 @@ from psycopg2 import sql
 from psycopg2 import DatabaseError
 from psycopg2.extensions import parse_dsn
 from functools import partial
-from stringql.pg_utils import psycopg2_exception_enhanced
-from stringql.pg_utils import reduce_fns_on_dict
-from stringql.pg_utils import create_sql_ids_from_list, create_sql_id
-from stringql.defined_exceptions import validate_data_arg_type
-from stringql.defined_exceptions import validate_mode_arg
-from stringql.defined_exceptions import validate_query_placeholders
+from pg_utils import psycopg2_exception_enhanced
+from pg_utils import reduce_fns_on_dict
+from pg_utils import create_sql_ids_from_list, create_sql_id
+from defined_exceptions import validate_data_arg_type
+from defined_exceptions import validate_mode_arg
+from defined_exceptions import validate_query_placeholders
 
 # todo recipes: insert_many, upsert, upsert_many.
 

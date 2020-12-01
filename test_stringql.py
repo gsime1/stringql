@@ -2,14 +2,14 @@ import unittest
 import testing.postgresql
 from psycopg2 import DatabaseError
 from psycopg2 import sql
-from pg_engine import MyDb, parameterize_query
-from defined_exceptions import WrongDataArgumentType
-from defined_exceptions import WrongModeArgument
-from defined_exceptions import WrongNumberOfPlaceholders
-from defined_exceptions import QueryMissingElements
-from defined_exceptions import TooManyKwargs
-from test_data import SCHEMA, TABLE
-from test_data import TUPLE_TO_INSERT, DICT_TO_INSERT
+from stringql.pg_engine import MyDb, parameterize_query
+from stringql.defined_exceptions import WrongDataArgumentType
+from stringql.defined_exceptions import WrongModeArgument
+from stringql.defined_exceptions import WrongNumberOfPlaceholders
+from stringql.defined_exceptions import QueryMissingElements
+from stringql.defined_exceptions import TooManyKwargs
+from stringql.test_data import SCHEMA, TABLE
+from stringql.test_data import TUPLE_TO_INSERT, DICT_TO_INSERT
 
 
 class DatabaseTestCase(unittest.TestCase):

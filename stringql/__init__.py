@@ -1,8 +1,7 @@
 # __init__.py
 
-from pg_engine import MyDb
+from stringql.pg_engine import MyDb
 
-# Version of the string_to_pg_1 package
 __version__ = "1.0.0"
 __all__ = ["MyDb", "start_engine"]
 

@@ -1,6 +1,6 @@
-from errors_txt import bad_data_error, bad_query_error
-from errors_txt import bad_kwarg_error
-from errors_txt import wrong_number_of_placeholders_error
+from stringql.errors_txt import bad_data_error, bad_query_error
+from stringql.errors_txt import bad_kwarg_error
+from stringql.errors_txt import wrong_number_of_placeholders_error
 
 
 class BaseValidationError(ValueError):

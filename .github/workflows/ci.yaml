@@ -9,4 +9,5 @@ jobs:
     - name: Run unit tests
       run: |
         pip3 install testing.postgresql
+        pip3 install psycopg2
         python3 stringql/pg_engine_test.py test

@@ -10,4 +10,4 @@ jobs:
       run: |
         pip3 install testing.postgresql
         pip3 install psycopg2-binary
-        python3 -m unittest test_sringql.py -v
+        python3 -m unittest stringql/test_sringql.py -v

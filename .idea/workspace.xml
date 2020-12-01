@@ -54,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606814297696</updated>
-      <workItem from="1606814298738" duration="3123000" />
+      <workItem from="1606814298738" duration="4119000" />
     </task>
     <servers />
   </component>
@@ -66,28 +66,28 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="279" y="126" width="718" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1606814342912" />
-    <state width="1238" height="8" key="GridCell.Tab.0.bottom" timestamp="1606814956677">
+    <state width="1238" height="8" key="GridCell.Tab.0.bottom" timestamp="1606821344866">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="8" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1606814956677" />
-    <state width="1238" height="8" key="GridCell.Tab.0.center" timestamp="1606814956677">
+    <state width="1238" height="8" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1606821344866" />
+    <state width="1238" height="8" key="GridCell.Tab.0.center" timestamp="1606821344866">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="8" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1606814956677" />
-    <state width="1238" height="8" key="GridCell.Tab.0.left" timestamp="1606814956676">
+    <state width="1238" height="8" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1606821344866" />
+    <state width="1238" height="8" key="GridCell.Tab.0.left" timestamp="1606821344865">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="8" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1606814956676" />
-    <state width="1238" height="8" key="GridCell.Tab.0.right" timestamp="1606814956677">
+    <state width="1238" height="8" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1606821344865" />
+    <state width="1238" height="8" key="GridCell.Tab.0.right" timestamp="1606821344866">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="8" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1606814956677" />
+    <state width="1238" height="8" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1606821344866" />
     <state x="167" y="-24" width="941" height="720" key="SettingsEditor" timestamp="1606814329564">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="167" y="-24" width="941" height="720" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1606814329564" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/stringql$Unittests_for_pg_engine_test_DatabaseTestCase.coverage" NAME="Unittests for pg_engine_test.DatabaseTestCase Coverage Results" MODIFIED="1606814501886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stringql" />
+    <SUITE FILE_PATH="coverage/stringql$Unittests_for_pg_engine_test_DatabaseTestCase.coverage" NAME="Unittests for pg_engine_test.DatabaseTestCase Coverage Results" MODIFIED="1606821344835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stringql" />
   </component>
 </project>

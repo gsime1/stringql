@@ -5,7 +5,7 @@ description = "Library to performs SQL string parameterisation and execution."
 authors = ["Gabriele Simeone <gabriele.simeone@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/johnfraney/flake8-markdown"
+homepage = "https://github.com/gsime1/stringql"
 
 [tool.poetry.dependencies]
 python = "^3.8"

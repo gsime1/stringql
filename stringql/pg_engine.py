@@ -4,8 +4,10 @@ import psycopg2
 from psycopg2 import sql
 from psycopg2 import DatabaseError
 from psycopg2.extensions import parse_dsn
-from functools import partial, reduce
+from functools import partial
 from stringql.pg_utils import psycopg2_exception_enhanced
+from stringql.pg_utils import reduce_fns_on_dict
+from stringql.pg_utils import create_sql_ids_from_list, create_sql_id
 from stringql.defined_exceptions import validate_data_arg_type
 from stringql.defined_exceptions import validate_mode_arg
 from stringql.defined_exceptions import validate_query_placeholders
@@ -234,25 +236,3 @@ def parameterize_query(query, data=None, **kwargs):
         format(**kwargs_sql_ids, **sql_ids)
 
     return parameterized_query
-
-
-# utils
-def reduce_fns_on_dict(fns, dic):
-    return reduce(lambda d, f: f(d), fns, dic)
-
-
-def create_sql_id(dic, on_param):
-    param = dic.get(on_param, None)
-    if param is not None:
-        # overwrite with sql id
-        dic[on_param] = sql.Identifier(param)
-        return dic
-
-
-def create_sql_ids_from_list(dic, on_list_param):
-    list_param = dic.get(on_list_param, None)
-    if list_param is not None:
-        # overwrite with sql id
-        dic[on_list_param] = sql.SQL(', ').join(map(
-            sql.Identifier, list_param))
-        return dic
